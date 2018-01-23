@@ -41,9 +41,19 @@ def create
     end
   end
 
-def show
-	@portfolio_item = Portfolio.find(params[:id])
-end
+	def show
+		@portfolio_item = Portfolio.find(params[:id])
+	end
+
+	def destroy
+		@portfolio_item = Portfolio.find(params[:id])
+
+		@portfolio_item.destroy
+    respond_to do |format|
+      format.html { redirect_to portfolios_url, notice: 'Successfully destroyed. For science. You monster.' }
+      
+    end
+	end
 
 
 end
