@@ -44,15 +44,15 @@ puts "5 skills created"
 end
 
 
-1.times do |portfolio_item|
-	Portfolio.create!(
-		title: "Portfolio title: #{portfolio_item}" ,
-		subtitle: "Angular",
-		body: "Nulla at vestibulum felis. Nam scelerisque ligula eget bibendum rutrum. Curabitur eget pulvinar dolor. Duis faucibus libero dolor, sed vehicula odio rutrum vitae. Suspendisse vitae dui lacus. Integer risus quam, tincidunt eget condimentum ut, lobortis ut magna. Nunc aliquet eros diam, et semper elit interdum volutpat.",
-		main_image: "http://via.placeholder.com/600x400",
-		thumb_image: "http://via.placeholder.com/350x200"
-		)
-end
+# 2.times do |portfolio_item|
+# 	Portfolio.create!(
+# 		title: "Portfolio title: #{portfolio_item}" ,
+# 		subtitle: "Angular",
+# 		body: "Nulla at vestibulum felis. Nam scelerisque ligula eget bibendum rutrum. Curabitur eget pulvinar dolor. Duis faucibus libero dolor, sed vehicula odio rutrum vitae. Suspendisse vitae dui lacus. Integer risus quam, tincidunt eget condimentum ut, lobortis ut magna. Nunc aliquet eros diam, et semper elit interdum volutpat.",
+# 		main_image: "http://via.placeholder.com/600x400",
+# 		thumb_image: "http://via.placeholder.com/350x200"
+# 		)
+# end
 
 puts "9 portfolio items created"
 
