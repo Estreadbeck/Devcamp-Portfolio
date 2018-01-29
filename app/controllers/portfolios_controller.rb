@@ -7,13 +7,13 @@ class PortfoliosController < ApplicationController
 #  @angular_portfolio_items = Portfolio.angular
 # end
 
-def new
+  def new
 	@portfolio_item = Portfolio.new
   3.times { @portfolio_item.technologies.build }
-end
+  end
 
-def create
-    @portfolio_item = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body, technologies_attributes: [:name]))
+  def create
+    @portfolio_item = Portfolio.new(portfolio_params)
 
     respond_to do |format|
       if @portfolio_item.save
@@ -34,7 +34,7 @@ def create
   	@portfolio_item = Portfolio.find(params[:id])
 
     respond_to do |format|
-      if @portfolio_item.update(params.require(:portfolio).permit(:title, :subtitle, :body))
+      if @portfolio_item.update(portfolio_params)
         format.html { redirect_to portfolios_path, notice: 'Portfollio was successfully updated.' }
         
       else
@@ -58,6 +58,16 @@ def create
       
     end
 	end
+
+  private
+
+  def portfolio_params
+    params.require(:portfolio).permit(:title, 
+                                      :subtitle, 
+                                      :body, 
+                                      technologies_attributes: [:name]
+                                      )
+  end
 
 
 end
