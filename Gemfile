@@ -60,4 +60,4 @@ gem 'bootstrap', '~> 4.0.0'
 
 gem 'jquery-rails'
 
-gem 'streadbeck_view_tool', git: 'https://github.com/Estreadbeck/Streadbeck_View_Tool'
+gem 'streadbeck_view_tool', '~> 0.1.0'
