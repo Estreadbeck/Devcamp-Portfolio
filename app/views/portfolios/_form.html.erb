@@ -1,4 +1,9 @@
 <%= form_for(@portfolio_item) do |f| %>
+  <% if @portfolio_item.errors.any? %>
+    <% @portfolio_item.errors.full_messages.each do |error| %>
+      <%= alert_generator error %>
+  <% end %>
+<% end %>
   <div class="row">
     <div class="col-md-6">
       <div class="form-group">
@@ -20,7 +25,7 @@
 
     <div class="form-group">
       <label class="btn btn-primary">
-        Upload a thumb image file <%= f.file_field :thumbs_image, style: 'display:none;' %>
+        Upload a thumb image file <%= f.file_field :thumb_image, style: 'display:none;' %>
       </label>
     </div>
   </div>
@@ -40,10 +45,12 @@
       <%= f.fields_for :technologies do |technology_form| %>
         <%= render 'technology_fields', f: technology_form %>
       <% end %>
+
+      <div>
+        <%= link_to_add_association "Add Technology", f, :technologies %>
+      </div>
     </div>
-    <div>
-      <%= link_to_add_association "Add Technology", f, :technologies %>
-    </div>
+    
 
  
 
@@ -52,4 +59,5 @@
       </div>
     </div>
   </div>
+
 <% end %>
