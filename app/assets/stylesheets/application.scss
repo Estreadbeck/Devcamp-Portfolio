@@ -67,6 +67,8 @@ body {
 
 .masthead {
   margin-bottom: 2rem;
+  position: fixed;
+  top: 0px;
 }
 
 .masthead-brand {
@@ -157,7 +159,7 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 55rem;
+    width: 65rem;
   }
 }
 
@@ -210,4 +212,18 @@ body {
   color: white;
 }
 
+.tech-news {
+  color: black;
+  margin: 20px;
+}
 
+.tech-news a{
+ color: blue;
+}
+
+.tech-news > .card{
+  width: 22rem;
+  margin: 0 auto;
+  float: none;
+  padding: 20px;
+}
