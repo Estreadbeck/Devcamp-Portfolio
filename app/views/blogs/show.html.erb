@@ -9,12 +9,11 @@
   </p>
 
 <!-- Start of comment form -->
-<%= render 'comments/comment_form' %>
+  <%= render 'comments/comment_form' %>
 
-<!-- Start of comment -->
-<%= render @blog.comments %>
-
-<!-- End of comment -->
+  <div id="comments" data-blog-id="<%= @blog.id %>">
+    <%= render @blog.comments %>
+  </div>
 
 
 
