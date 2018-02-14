@@ -5,9 +5,9 @@ Rails.application.routes.draw do
   resources :portfolios, except: [:show] do
     put :sort, on: :collection
   end
-  # resources :comments, except: [:create, :new] do
-  #   put :sort, on: :collection
-  # end
+  resources :comments, except: [:index] do
+    put :sort, on: :collection
+  end
 
   get 'angular-items', to: 'portfolios#angular'
   get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
@@ -16,9 +16,7 @@ Rails.application.routes.draw do
   get 'contact', to: 'pages#contact'
   get 'tech-news', to: 'pages#tech_news'
 
-  
-  # get 'comment/:id', to: 'comments#show', as: 'comment_show'
-
+    
   resources :blogs do
     member do
       get :toggle_status
