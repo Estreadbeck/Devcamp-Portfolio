@@ -17,7 +17,7 @@
     <div class="site-wrapper">
       <div class="site-wrapper-inner">
         <div class="cover-container">
- 
+        
          <%= video_tag(
           'fireplace.mp4',
           id: 'background',
@@ -26,16 +26,14 @@
           muted: true,
           poster: 'fireplace_bg.png'
          )
-          %>
+          %> 
 
           <%= render "shared/application_nav" %>
 
           <%= yield %>
 
           <%= render "shared/application_footer" %>
-
-          <%= source_helper("application") %>
-
+          
           <%= alerts %>
 
         </div>
