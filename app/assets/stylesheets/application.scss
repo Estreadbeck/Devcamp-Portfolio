@@ -228,3 +228,25 @@ body {
   padding: 20px;
 }
 
+.app-card-container {
+  color: black;
+  text-align: left;
+}
+
+.app-card-container > .card {
+  padding: 20px 30px 25px 30px;
+}
+
+.profile-img {
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+/*#gmap {
+  border: 1px solid grey;
+  border-radius: 5px;
+}*/
+
+.app-card-container a {
+  color: blue;
+}
