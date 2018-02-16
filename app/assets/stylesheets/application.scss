@@ -27,6 +27,9 @@ a:hover {
  * Base structure
  */
 
+
+
+
 html,
 body {
   height: 100%;
@@ -35,6 +38,17 @@ body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+  font-family: 'Lato', sans-serif;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: normal;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -138,10 +152,12 @@ body {
   .masthead {
     position: relative;
     top: 0;
+    display: inline-block;
   }
   .mastfoot {
     position: relative;
     bottom: 0;
+    display: inline-block;
   }
   /* Start the vertical centering */
   .site-wrapper-inner {
@@ -204,7 +220,7 @@ body {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url('fireplace_bg.png') no-repeat;
+  background: image-url('leaves_bg.png') no-repeat;
   background-size: cover;
 }
 
@@ -228,3 +244,40 @@ body {
   padding: 20px;
 }
 
+.app-card-container {
+  color: black;
+  text-align: left;
+}
+
+.app-card-container > .card {
+  padding: 20px 30px 25px 30px;
+}
+
+.profile-img {
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+/*#gmap {
+  border: 1px solid grey;
+  border-radius: 5px;
+}*/
+
+.app-card-container a {
+  color: blue;
+}
+
+.card-block {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.skill {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.main-page {
+  position: relative;
+  display: inline-block;
+}

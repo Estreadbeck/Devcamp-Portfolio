@@ -7,7 +7,11 @@
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
 
+    <link href="https://fonts.googleapis.com/css?family=Lato|Nunito" rel="stylesheet">
+
     <meta name="keywords" content="<%= @seo_keywords %>" />
+
+    <%= favicon_link_tag 'favicons/fire.ico' %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -17,14 +21,14 @@
     <div class="site-wrapper">
       <div class="site-wrapper-inner">
         <div class="cover-container">
- 
-         <%= video_tag(
-          'fireplace.mp4',
-          id: 'background',
-          autoplay: true,
-          loop: true,
-          muted: true,
-          poster: 'fireplace_bg.png'
+        
+          <%= video_tag(
+            'leaves.mp4',
+            id: 'background',
+            muted: true,
+            autoplay: true,
+            loop: true,            
+            poster: 'leaves_bg.png'
          )
           %>
 
@@ -33,9 +37,7 @@
           <%= yield %>
 
           <%= render "shared/application_footer" %>
-
-          <%= source_helper("application") %>
-
+          
           <%= alerts %>
 
         </div>
