@@ -152,10 +152,12 @@ h6, .h6 {
   .masthead {
     position: relative;
     top: 0;
+    display: inline-block;
   }
   .mastfoot {
     position: relative;
     bottom: 0;
+    display: inline-block;
   }
   /* Start the vertical centering */
   .site-wrapper-inner {
@@ -273,4 +275,9 @@ h6, .h6 {
 .skill {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.main-page {
+  position: relative;
+  display: inline-block;
 }
