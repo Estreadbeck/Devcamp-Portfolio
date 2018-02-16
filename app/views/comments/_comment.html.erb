@@ -15,7 +15,7 @@
 
           <div class="comment-data-meta">
             Comment posted by <span class="comment-name"><%= comment.user.first_name %></span> <%= distance_of_time_in_words(comment.created_at, Time.now) %> ago
-            <%= link_to 'Edit', edit_comment_path(comment) %> / <%= link_to 'Delete', comment, method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin) %> 
+             
              
           </div>
           
