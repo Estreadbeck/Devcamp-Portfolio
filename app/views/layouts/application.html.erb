@@ -20,15 +20,16 @@
   <body>
     <div class="site-wrapper">
       <div class="site-wrapper-inner">
-        <div class="cover-container">
+        <div class="cover-container" volume='0'>
         
           <%= video_tag(
-            'leaves.mp4',
+            'fireplace.mp4',
             id: 'background',
             muted: true,
+            volume: 0,
             autoplay: true,
             loop: true,            
-            poster: 'leaves_bg.png'
+            poster: 'fireplace_bg.png'
          )
           %>
 
