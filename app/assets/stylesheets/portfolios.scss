@@ -3,7 +3,7 @@
 @import "gritter";
 
 body {
-  min-height: 75rem; /* Can be removed; just added for demo purposes */
+  
   font-family: 'Lato', sans-serif;
 }
 
@@ -64,8 +64,10 @@ h6, .h6 {
 }
 
 footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  position: relative;
+  
 }
 
 footer p {
@@ -76,4 +78,8 @@ footer p {
 
 .portfolio-container {
   padding: 30px;
+}
+
+.show-space {
+  padding-top: 15px;
 }

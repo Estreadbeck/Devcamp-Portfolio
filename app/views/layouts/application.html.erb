@@ -19,7 +19,6 @@
 
   <body>
     <div class="site-wrapper">
-      <div class="site-wrapper-inner">
         <div class="cover-container" volume='0'>
         
           <%= video_tag(
@@ -32,15 +31,19 @@
             poster: 'fireplace_bg.png'
          )
           %>
-
-          <%= render "shared/application_nav" %>
+          <div class="nav-header">
+            <%= render "shared/application_nav" %>
+          </div>
 
           <%= yield %>
 
-          <%= render "shared/application_footer" %>
+          
           
           <%= alerts %>
 
+          <footer>
+            <%= render "shared/application_footer" %>
+          </footer>
         </div>
       </div>
     </div>
