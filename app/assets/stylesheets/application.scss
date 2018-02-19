@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "font-awesome";
 @import "gritter";
 
 /*
@@ -23,10 +24,8 @@ a:hover {
 }
 
 
-.btn-secondary:hover {
-  
-  color: white;
-  background-color: lightslategrey;
+.btn-secondary:hover { 
+  background-color: lightgrey;
 
 }
 
@@ -309,4 +308,9 @@ footer {
 
 .main-page {
   padding-top: 50px;
+}
+
+.social-links {
+  font-size: 2.5em;
+  text-align: center;
 }
