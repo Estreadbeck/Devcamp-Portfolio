@@ -7,8 +7,8 @@
     
     <div class="row">
       <div class="col-md-4">
-        <%= image_tag "Scruffy.jpg", width: 300, alt: "profile image", class: 'profile-img' %>
-
+        <%= image_tag "ethanpic.jpg", width: 300, alt: "profile image", class: 'profile-img' %>
+        <h4 id="site-code">Code used in this site:</h4>
         <div class="skills">
           <% @skills.each do |skill| %>
           <div class="skill">
@@ -27,8 +27,8 @@
         </div>
       </div>
       <div class="col-md-8">
-        <p>This page is under constuction</p>
-        <p>This will hold some basic information about me in the future, but until then enjoy this placeholder text</p>
+        <p>I've always had an interest in computers, for as long as I can remember, and after my experiences working with a CNC machine, and with serving a volunteer LDS mission in the great country of Japan, has only further cemented my interests in the computer industry. I am currently working towards a bachelor's degree in computer engineering at Utah Valley University, as well as seeking a web development certificate from Bottega, in Lehi, Ut.</p>
+        <p>I am excited to work together</p>
 
         <p>
           <button
@@ -37,7 +37,7 @@
             data-toggle="collapse"
             data-target="#jobHistory"
             aria-expanded="false"
-            aria-controler="jobHistory"
+            aria-controller="jobHistory"
           >
             Job History
           </button>
@@ -47,37 +47,63 @@
             data-toggle="collapse"
             data-target="#education"
             aria-expanded="false"
-            aria-controler="education"
+            aria-controller="education"
           >
             Education
+          </button>
+
+           <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#myskill"
+            aria-expanded="false"
+            aria-controller="myskill"
+          >
+            Skills
           </button>
         </p>
 
         <p>
           <div class="collapse" id="jobHistory">
             <div class="card card-block">
-              Jorb 1
+              Adonis Bronze: CNC Machining 
             </div>
             <div class="card card-block">
-              Jorb 2
+              Alpine Art Center: Food Server | Dishwasher
             </div>
 
           </div>
 
           <div class="collapse" id="education">
             <div class="card card-block">
-              School 1
+              Lehi High School Class of 2014
             </div>
             <div class="card card-block">
-              School 2
+              Utah Valley University B.S. Computer Engineering 2017 - Present
             </div>
-
+            <div class="card card-block">
+              Bottega coding bootcamp 2018
+            </div>
           </div>
-        </p>
-      </div>
+            <div class="collapse" id="myskill">
+              <div class="card card-block">
+                Bilingual: English | Japanese 
+              </div>
+              <div class="card card-block">
+                Computer Setup and Maintenance
+              </div> 
+              <div class="card card-block">
+                Ruby on Rails Programming and Web Development
+              </div>
+
+            
+
+            </div>
+          </p>
+        </div>
     </div>
 
   </div>
 
 </div>
-
