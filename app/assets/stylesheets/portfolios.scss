@@ -87,3 +87,30 @@ footer p {
 #custom-link {
   color: slategrey;
 }
+
+.carousel-inner {
+  border-radius: 20px;
+  border: 1px solid #ededed;
+}
+
+.text-block {
+  background-color: rgba(50, 50, 50, 0.6);
+  color: #fff;
+  border-radius: 10px;
+}
+
+.text-block a{
+  color: #fff;
+}
+
+.carousel-control-prev-icon {
+  background-color: grey;
+  border-radius: 5px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.carousel-control-next-icon {
+  background-color: grey;
+  border-radius: 5px;
+}

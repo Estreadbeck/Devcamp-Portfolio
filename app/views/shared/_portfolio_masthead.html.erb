@@ -1,7 +1,14 @@
 <section class="jumbotron text-center">
   <div class="container">
-    <h1 class="jumbotron-heading">My Portfolio</h1>
+    <h1 class="jumbotron-heading">My Projects</h1>
+
+
     <p class="lead text-muted">I've built this page to demonstrate different pages and projects that I have made with pictures, and descriptions. Click on one to see.</p>
+    <p>
+      <div>
+        <%= render 'portfolios/carousel' %>
+      </div>
+    </p>
     <p>
       <%= link_to 'Find Out More About Me', about_me_path, class: 'btn btn-primary' %>
       <%= link_to 'My Blog', blogs_path, class: 'btn btn-secondary' %>

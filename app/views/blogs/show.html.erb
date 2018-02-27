@@ -22,7 +22,8 @@
   <p>
     <%= markdown @blog.body %>
   </p>
-
+  <hr>
+  Comments
   <%= render 'comments/comment_form' %>
 
   <div id="comments" data-blog-id="<%= @blog.id %>">
