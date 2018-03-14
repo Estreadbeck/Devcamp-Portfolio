@@ -10,7 +10,7 @@
     <div class="carousel-item active">
       <%= image_tag portfolio_img(Portfolio.first.main_image, 'main'), width: '100%' %>
       <div class="carousel-caption d-none d-md-block text-block">
-        <h5><%= link_to Portfolio.first.title, portfolio_show_path(@portfolio_items) %></h5>
+        <h5><%= Portfolio.first.title %></h5>
         <p><%= Portfolio.first.subtitle %></p>
       </div>
     </div>
@@ -25,7 +25,7 @@
       <%= image_tag portfolio_img(Portfolio.last.main_image, 'main'), width: '100%' %>
       <div class="carousel-caption d-none d-md-block text-block">
         <h4>Newest Item:</h4>
-        <h5><%= link_to Portfolio.last.title, portfolio_show_path(@portfolio_items) %></h5>
+        <h5><%= Portfolio.last.title %></h5>
         <p><%= Portfolio.last.subtitle %></p>
       </div>
     </div>
