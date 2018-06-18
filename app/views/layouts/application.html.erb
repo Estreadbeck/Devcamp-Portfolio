@@ -18,19 +18,9 @@
   </head>
 
   <body>
-    <div class="site-wrapper">
-        <div class="cover-container" volume='0'>
+    <div class="site-wrapper" id="background">
+        <div class="cover-container">
         
-          <%= video_tag(
-            'fireplace.mp4',
-            id: 'background',
-            muted: true,
-            volume: 0,
-            autoplay: true,
-            loop: true,            
-            poster: 'fireplace_bg.png'
-         )
-          %>
           <div class="nav-header">
             <%= render "shared/application_nav" %>
           </div>
@@ -41,11 +31,10 @@
           
           <%= alerts %>
 
+        </div>
           <footer>
             <%= render "shared/application_footer" %>
           </footer>
-        </div>
       </div>
-    </div>
   </body>
 </html>
